@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Freedom Fitness</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {text-align: center; line-height: 2}
+.bgimg, .bgimg2 {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.logo{font-size:150%;}
+.bgimg { background-image: url("chanan-greenblatt-50120.jpg")}
+.bgimg2 {background-image: url("david-schap-100823.jpg")}
+</style>
+<script>
+function validateForm() {
+    var name = document.myForm.name.value;
+    var email = document.myForm.email.value;
+    var content = document.myForm.content.value;
+    
+    if (name == ""||name==null) {
+        alert("Name must be filled out.");
+        return false;
+    }else if(email == ''|| email ==null){
+        alert('Email must be filled out.');
+        return false;
+    }else if(content == ''|| content ==null){
+        alert("I'd love to know what you would like to talk about! Please fill out the 'Message' field.");
+        return false;
+    }else{
+        getElementById('formConfirmed').innerHTML='I got your submission and will be in touch soon!'
+    }
+}
+</script>
+</head>
+<body>
+<div id="formConfirmed"></div>
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center" style="background-color: rgba(143,143,143,.5); padding: 2%;">
+    <h1 class="w3-jumbo">Freedom Fitness</h1>
+    <h2>INSPIRED FITNESS</h2>
+    <h3><b>Denver-Metro Area</b></h3>
+  </div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding-8 w3-opacity-min w3-hover-opacity-off">
+    <a style="width:20%;" class="w3-bar-item logo">Freedom Fitness</a>
+    <a href="#home" style="width:20%" class="w3-bar-item w3-button">Home</a>
+    <a href="#me" style="width:20%" class="w3-bar-item w3-button">About Me</a>
+    <a href="#information" style="width:20%" class="w3-bar-item w3-button">Session Information</a>
+    <a href="#contact" style="width:20%" class="w3-bar-item w3-button">Contact Me</a>
+  </div>
+</div>
+
+<!-- About Me -->
+<div class="w3-container w3-padding-64 w3-blue w3-grayscale-min" id="me">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-black"><b>About Me</b></h1>
+    <img class="w3-round w3-grayscale-min" src="11045026_10205420127518499_2223389996536865498_o.jpg" style="width:100%;margin:32px 0">
+      
+      
+    <p><i>I live in Littleton, Colorado with my husband and big fluffy cat. My spare time is spent playing music, exploring the outdoors, or working out at Awaken (Gymnastics Inspired Fitness). I have a passion for helping people find fun and sustainable ways to get in shape-- this pursuit is exactly what has set me free in the fitness world.</i>
+    </p>
+    <br>
+    <h3 class="w3-center w3-text-black"><b>My Qualifications</b></h3>
+    <p><i>
+        ATC: Board certified and state licensed Athletic Trainer<br>
+        CES: National Academy of Sports Medicine certified Corrective Exercise Specialist 
+    </i></p>
+    <h3 class="w3-center w3-text-black"><b>My Background</b></h3>
+    <p><i>I received my Bachelor's Degree in Athletic Training from Azusa Pacific University and then went to Regis University for my Masters and experience working as an Athletic Trainer with their Division II Women's Basketball team. In an effort to gain more experience with an adult/lay population, I have also worked in the Physical Therapy and Physician Sports Medicine setting. In addition to Freedom Fitness, I work as an Industrial Sports Medicine professional for some local distributorships. 
+    </i></p>
+      <br>
+      
+    <p class="w3-center"><a href="#contact" class="w3-button w3-black w3-round w3-padding-large w3-large">Contact Me</a></p>
+  </div>
+</div>
+
+<!-- Background photo -->
+<div class="w3-display-container bgimg2">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">Are You Ready?</h1><br>
+    <h2>Of course..</h2>
+  </div>
+</div>
+
+<!-- Session Information -->
+<div class="w3-container w3-padding-64 w3-white w3-grayscale-min w3-center" id="information">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>Session Information</b></h1>
+    <!--<img class="w3-round-large w3-grayscale-min" src="#" style="width:100%;margin:64px 0">-->
+    <div class="w3-row">
+      <div class="w3-half">
+        <h3>One on One</h3>
+        <p>Work towards your goals with consideration for baseline testing and physical limitations. Pack of 8 visits with one free baseline testing</p>
+        <p>$250</p>
+      </div>
+      <div class="w3-half">
+        <h3>Small Group Session</h3>
+        <p>Work with your buddies towards your fitness goals. This is meant for 2-6 people who are of similar fitness levels and share common fitness goals.</p>
+        <p>Pack of 8 sessions: $750</p>
+      </div>
+        <div class="w3-fourth">
+        <h3>Workplace Sessions</h3>
+        <p>Whether you are a group of desk jockey's or manual labor warriors, invite me into your workday for injury prevention, camaraderie, and stress relief! Classes can vary from posture restoration to six-pack activation.</p>
+        <p>Pack of 5 sessions: $600</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Me -->
+<div class="w3-container w3-padding-64 w3-blue w3-center w3-wide" id="contact">
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-black w3-opacity w3-hover-opacity-off" style="padding:8px 60px">CONTACT ME</button>
+  </p>
+  <p class="w3-large">I look forward to speaking with you soon!</p>
+</div>
+
+<!-- RSVP modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-8 w3-animate-zoom w3-padding-jumbo" style="max-width:600px">
+    <div class="w3-container w3-white w3-center">
+        <h1 class="w3-wide">Contact Me</h1>
+      <p>I will reply within 24-48 hours upon submision of this form.</p>
+      <form name="myForm" method="post" action="#" onsubmit="return validateForm()">
+        <input class="w3-input w3-border" type="text" placeholder="Name" name="name">
+        <input class="w3-input w3-border" type="email" placeholder="Email" name="email">
+        <select class="w3-input w3-border" name="choice">
+            <option value="australia">Session Interest(Please Choose One)</option>
+            <option value="australia">One on One</option>
+            <option value="canada">Small Group</option>
+            <option value="usa">Workplace</option>
+        </select>
+        <input class="w3-input w3-border" type="text" placeholder="Message" name="content">
+      <p><i>Sincerely, Lyndsay Trefzger</i></p>
+      <div class="w3-row">
+        <div class="">
+        <input type='submit' type="button" class="w3-button w3-block w3-green">
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a> and CRdesigns</p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
+
